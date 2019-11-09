@@ -36,7 +36,8 @@ bash scripts/config --file .config \
         --module HID_SENSOR_IIO_TRIGGER \
         --module HID_SENSOR_HUB \
         --module HID_SENSOR_ACCEL_3D \
-	--module HID_SENSOR_GYRO_3D
+	--module HID_SENSOR_GYRO_3D \
+	--module BATMAN_ADV
 
 yes "" | make olddefconfig
 

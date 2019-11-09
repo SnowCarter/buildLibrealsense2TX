@@ -54,7 +54,7 @@ L4TTarget="28.2.1"
   # Test for 28.2.1 first
   if [ $JETSON_L4T = "28.2.1" ] ; then
      KERNEL_BUILD_VERSION=vL4T28.2.1
-  elif [ $JETSON_L4T = "28.2" ] ; then
+  elif [ $JETSON_L4T = "28.2.0" ] ; then
      KERNEL_BUILD_VERSION=vL4T28.2r3
   else
    echo ""
@@ -73,8 +73,8 @@ L4TTarget="28.2.1"
 fi
 
 if [ $JETSON_BOARD == "TX1" ] ; then 
- L4TTarget="28.2"
- if [ $JETSON_L4T = "28.2" ] ; then
+ L4TTarget="28.2.0"
+ if [ $JETSON_L4T = "28.2.0" ] ; then
      KERNEL_BUILD_VERSION=v1.0-L4T28.2
   else
    echo ""

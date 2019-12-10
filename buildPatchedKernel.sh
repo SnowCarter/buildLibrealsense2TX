@@ -166,7 +166,7 @@ fi
 
 # Get the kernel sources; does not open up editor on .config file
 echo "${green}Getting Kernel sources${reset}"
-./getKernelSourcesNoGUI.sh
+./getKernelSources.sh
 cd ..
 echo "${green}Patching and configuring kernel${reset}"
 sudo ./scripts/configureKernel.sh
